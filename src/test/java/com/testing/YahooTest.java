@@ -16,6 +16,7 @@ public class YahooTest{
 	public void testGoogle(){
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://yahoo.com");
+		
 		driver.quit();
 	}
   
