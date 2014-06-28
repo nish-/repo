@@ -58,13 +58,13 @@
         </configuration>
       </plugin>
       
-      <plugin>
+      <!-- <plugin>
         <artifactId>maven-antrun-plugin</artifactId>
         <version>1.6</version>
         <executions>
           <execution>
             <phase>compile</phase>
-            <configuration>
+            <configuration> 
             
              <tasks name="runtheapp">
              <!--  property name="compile_classpath" refid="maven.compile.classpath"/>
@@ -77,9 +77,9 @@
                 
                 <echo message="runtime classpath: ${runtime_classpath}"/>
                 <echo message="test classpath:    ${test_classpath}"/>
-                <echo message="plugin classpath:  ${plugin_classpath}"/-->
+                <echo message="plugin classpath:  ${plugin_classpath}"/-->  
                 
-                <ant antfile="build.xml"/>
+               <!--  <ant antfile="build.xml"/>  
                
                
             <exec  
@@ -90,15 +90,13 @@
             </exec> 
              
 			</tasks>
-            </configuration>
+            </configuration>  
             <goals>
               <goal>run</goal>
             </goals>
           </execution>
         </executions>
-      </plugin>
-    
-      
+      </plugin>  /-->
 </plugins>
   
   </build>
